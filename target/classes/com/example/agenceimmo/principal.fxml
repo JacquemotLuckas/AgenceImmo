@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #DDD0C8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.agenceimmo.PrincipalController">
+   <children>
+      <Button fx:id="boutonDeco" layoutX="1181.0" layoutY="42.0" mnemonicParsing="false" onAction="#onBoutonDecoClick" style="-fx-background-color: #323232;" text="Déconnexion" textFill="#ddd0c8" />
+      <Label fx:id="labelUtilisateur" layoutX="1182.0" layoutY="14.0" text="Nom Utilisateur" />
+      <Button fx:id="boutonAjouter" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#onBoutonAjouterClick" prefHeight="33.0" prefWidth="138.0" style="-fx-background-color: #323232;" text="Ajouter" textFill="#dbcfc8" />
+      <TableView fx:id="tableLogements" layoutX="9.0" layoutY="88.0" prefHeight="621.0" prefWidth="1257.0" style="-fx-background-color: #323232;">
+        <columns>
+          <TableColumn fx:id="colonneCodePostal" minWidth="0.0" prefWidth="160.0" text="Code Postal" />
+          <TableColumn fx:id="colonneVille" prefWidth="344.0" text="Ville" />
+          <TableColumn fx:id="colonneRue" prefWidth="661.0" text="Rue" />
+          <TableColumn fx:id="colonnePieces" minWidth="0.0" prefWidth="91.0" text="Pieces" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="uneImage" fitHeight="63.0" fitWidth="161.0" layoutX="857.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="" layoutX="167.0" layoutY="10.0" mnemonicParsing="false" onAction="#onBoutonVisualiserClick" prefHeight="33.0" prefWidth="138.0" style="-fx-background-color: #323232;" text="Visualiser" textFill="#dbcfc8" />
+      <Button fx:id="boutonActualiser" onAction="#onBoutonActualiserClick" layoutX="320.0" layoutY="10.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="138.0" style="-fx-background-color: #323232;" text="Actualiser" textFill="#ddd0c8" />
+   </children>
+</AnchorPane>
